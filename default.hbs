@@ -14,7 +14,7 @@
 <div class="site">
 
     <header id="gh-head" class="gh-head gh-outer">
-    <div class="gh-head-inner gh-inner">
+    <div class="gh-head-inner gh-inner" style="grid-template-columns: auto; justify-content: center;">
 
         <div class="gh-head-brand">
             <div class="gh-head-brand-wrapper">
@@ -29,17 +29,17 @@
                     {{/if}}
                 </a>
             </div>
-            <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-            <button class="gh-burger"></button>
+            <!-- <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+            <button class="gh-burger"></button> -->
         </div>
 
-        <nav class="gh-head-menu">
+        <!-- <nav class="gh-head-menu">
             {{navigation}}
-        </nav>
+        </nav> -->
 
         <div class="gh-head-actions">
-            <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-            {{#if @member}}
+            <!-- <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button> -->
+            <!-- {{#if @member}}
                 <button class="button-text menu-item members-account" data-portal="account">Account</button>
                 {{#unless @member.paid}}
                     <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
@@ -47,7 +47,7 @@
             {{else}}
                 <button class="button-text menu-item members-login" data-portal="signin">Login</button>
                 <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
-            {{/if}}
+            {{/if}} -->
         </div>
 
     </div>
@@ -66,16 +66,16 @@
     </div>
 
     <footer class="gh-foot gh-outer">
-        <div class="gh-foot-inner gh-inner">
+        <div class="gh-foot-inner gh-inner" style="grid-template-columns: auto; justify-content: center;">
             <div class="gh-copyright">
                 {{@site.title}} © {{date format="YYYY"}}
             </div>
             <nav class="gh-foot-menu">
                 {{navigation type="secondary"}}
             </nav>
-            <div class="gh-powered-by">
+            {{!-- <div class="gh-powered-by">
                 <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
-            </div>
+            </div> --}}
         </div>
     </footer>
 
